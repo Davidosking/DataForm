@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Confirm</title>
+    </h:head>
+    <h:body>
+        <p>
+            <img src="city-logo.jpg" width="200" height="100" alt="city-logo"/>
+
+            Are your all data entries correct?
+        </p>
+        <f:view  >
+            <h:form>
+                
+                <br/>
+                <h:outputText value="#{formbean.firstName} "></h:outputText> <h:outputText value="#{formbean.middleName} "/> <h:outputText value="#{formbean.lastName}"/>
+                <br/>
+                <h:outputText value="#{formbean.birthMonth} "/><h:outputText value="#{formbean.birthDay} "/><h:outputText value="#{formbean.birthYear}"/>
+                <br/>
+                <h:outputText value="#{formbean.unit} "/><h:outputText value="#{formbean.street} "/><h:outputText value="#{formbean.city}"/>
+                <br/>
+                <h:outputText value="#{formbean.state} "/><h:outputText value="#{formbean.zipCode}"/>
+                
+                <br/>
+               
+                
+  
+                
+                
+                <h:commandButton value ="Yes" action="result"/> <h:commandButton  value ="No" action ="DataForm"/>
+            </h:form>
+        </f:view>
+
+    </h:body>
+</html>
+

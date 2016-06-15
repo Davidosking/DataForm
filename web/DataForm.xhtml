@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    
+    <h:head>
+        <title>User Data Form</title>
+    </h:head>
+    
+    <h:body>
+        
+        <p>
+            <img src="city-logo.jpg" width="200" height="100" alt="city-logo"/>
+
+            Please use the form below to enter your personal identification data(PID). All data is stored in a secure database.
+        </p>
+        <f:view>
+            <h:form >
+                Name:
+                <br></br>
+                <br></br>
+                First <h:inputText id="firstname" value="#{formbean.firstName}" ></h:inputText> Middle <h:inputText id="middlename" value="#{formbean.middleName}"></h:inputText> Last <h:inputText id="lastname" value="#{formbean.lastName}"></h:inputText>
+                <br></br><br></br>
+               
+                Birth Date:  
+                <br></br>
+                <br></br>
+                Day <h:inputText id="birthday" value="#{formbean.birthDay}"></h:inputText> Month <h:inputText id="birthmonth" value="#{formbean.birthMonth}"></h:inputText> Year <h:inputText id="birthyear" value="#{formbean.birthYear}"></h:inputText>
+                <br></br><br></br>
+                Address:
+                <br></br>
+                <br></br>
+                Unit #<h:inputText value="#{formbean.unit}"></h:inputText> Street <h:inputText value="#{formbean.street}" ></h:inputText> City <h:inputText value="#{formbean.city}"></h:inputText> <br></br><br></br>
+                    
+                State <h:inputText value="#{formbean.state}"></h:inputText> Zip Code <h:inputText value="#{formbean.zipCode}"></h:inputText>
+                <br></br>
+                <br></br>
+                
+                
+                
+                <br></br>
+                
+                <h:commandButton id="send" value="Submit" action="ConfirmData"/>
+            </h:form>
+        </f:view>
+        
+        
+
+    </h:body>
+    
+</html>
+
